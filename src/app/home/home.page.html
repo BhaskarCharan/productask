@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="warning" class="backbtn">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button class="notification">
+        <ion-icon name="notifications-outline" color="warning"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="title">Products List</h1>
+
+  <ion-row class="favorite-items">
+    <ion-col size="6" class="ion-text-left padding-left0" *ngFor="let product of Products">
+      <img src="{{product.img}}" />
+      <h6>{{product.info}}</h6>
+      <p class="small">{{product.text}}</p>
+      <ion-text color="success"><h6>{{product.discount}}</h6></ion-text>
+    </ion-col>
+  </ion-row>
+</ion-content>
