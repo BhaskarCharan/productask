@@ -1,0 +1,12 @@
+<ion-content>
+    <h1 class="title">Products List Using Service</h1>
+
+  <ion-row class="favorite-items">
+    <ion-col size="6" class="ion-text-left padding-left0" *ngFor="let item of product">
+      <img src="{{item.img}}" />
+      <h6>{{item.info}}</h6>
+      <p class="small">{{item.text}}</p>
+      <ion-text color="success"><h6>{{item.discount}}</h6></ion-text>
+    </ion-col>
+  </ion-row>
+</ion-content>
